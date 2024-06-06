@@ -44,8 +44,20 @@ public class EstudiantePresencial extends Estudiante {
 
     @Override
     public String toString() {
-        String reporte = String.format("Nombre Estudiante: %s\nCosto Matricula: "
-                + "%.2f", nombresEstudiante, obtenerMatriculaPresencial());
+        String reporte =String.format("Nombres: %s\n"
+                + "Apellidos: %s\n"
+                + "Identificación: %s\n"
+                + "Edad: %d\n"
+                + "Número de crédito: %d\n"
+                + "Costo Crédito: %.1f\n"
+                + "Costo matrícula: %.1f\n",
+                obtenerNombresEstudiante(),
+                obtenerApellidoEstudiante(),
+                obtenerIdentificacionEstudiante(),
+                obtenerEdadEstudiante(),
+                obtenerNumeroCreditos(),
+                obtenerCostoCredito(),
+                obtenerMatriculaPresencial());
         // Se hereda de la superClase Estudiante gracias a esto podemos hacer uso
         // de sus metodos y atributos protejidos
         return reporte;
