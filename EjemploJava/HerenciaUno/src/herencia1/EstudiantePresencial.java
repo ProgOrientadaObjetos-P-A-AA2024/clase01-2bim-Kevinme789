@@ -48,7 +48,7 @@ public class EstudiantePresencial extends Estudiante {
                 + "Apellidos: %s\n"
                 + "Identificación: %s\n"
                 + "Edad: %d\n"
-                + "Número de crédito: %d\n"
+                + "Número de créditos: %d\n"
                 + "Costo Crédito: %.1f\n"
                 + "Costo matrícula: %.1f\n",
                 obtenerNombresEstudiante(),

@@ -23,6 +23,7 @@ public class Ejecutor3 {
         System.out.println("Ingrese 1 para ingresar Estudiante Distancia");
         System.out.println("Ingrese 2 para ingresar Estudiante Precensial");
         opc = entrada.nextInt();
+        entrada.nextLine();
         if (opc == 1) {
             EstudianteDistancia estudiante = new EstudianteDistancia();
             System.out.println("Ingrese nombres");
@@ -58,7 +59,7 @@ public class Ejecutor3 {
             int edad = entrada.nextInt();
             System.out.println("Ingrese número de Creditos");
             int creditos = entrada.nextInt();
-            System.out.println("Ingrese costo asignatura");
+            System.out.println("Ingrese costo por Credito");
             double costoCredito = entrada.nextDouble();
             estudiante.establecerNombresEstudiante(nombres);
             estudiante.establecerApellidoEstudiante(apellidos);
